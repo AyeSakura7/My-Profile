@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
       const targetId = link.getAttribute("data-section");
+
       sections.forEach(sec => {
         sec.style.display = (sec.id === targetId) ? "block" : "none";
       });
